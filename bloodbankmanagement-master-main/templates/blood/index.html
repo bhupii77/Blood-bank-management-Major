@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+
+<head>
+    <style>
+        .xyz{
+          margin-bottom: 0px;
+          background-image: url('{% static "image/home2.jpg" %}');
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      </style>
+      {% block title %}
+    <title>Blood Bank</title>
+    {% endblock %}
+      
+</head>
+
+
+<body>
+  {% include "blood/navbar.html" %}
+<br>
+<section id="section-jumbotron" style="margin-bottom: 0px;" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center xyz">
+    <div class="container text-center">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+     
+      
+      <br><br><br><br>
+      
+    </div>  
+  </section>
+
+
+  <div class="jumbotron" style="margin-top: 0px;margin-bottom: 0px;">
+
+    <p class="lead text-center"><I>“Donate Blood Because You Never Know How Helpful It Might Be To Someone.”</I></p>
+    
+    <h3 class="text-left"><b>Why should you donate blood?</b></h3>
+    <p>Donating blood is a simple thing to do, but it can make a big difference in the lives of others.
+       The donation process from the time you arrive until the time you leave takes about an hour. 
+       The donation itself is only about 8-10 minutes on average. The process is safe and sterile. 
+       A single donation can save as many as three lives. You will feel good knowing you've helped change a life.
+       Donating blood is a vital and selfless act that saves lives and improves health for countless individuals. 
+       Blood donations are essential for treating patients who suffer from trauma, undergo surgeries, or battle diseases like cancer and anemia.
+       Each donation can help up to three people, making a significant impact on the well-being of others. Regular blood donations also help maintain a stable blood supply,
+       ensuring that hospitals and clinics are prepared for emergencies. Moreover, the process of donating blood is safe, quick, and relatively painless,
+       with donors often experiencing a sense of fulfillment knowing they have contributed to their community. Additionally, blood donation has health benefits for the donor,
+       including a free health screening and the potential for reduced risk of certain health conditions. Ultimately, 
+       donating blood is a simple yet profound way to give back and support the health and survival of those in need. </p>
+    
+  </div>
+  {% include "blood/footer.html" %}
+
+
+</body>
+
+</html>
